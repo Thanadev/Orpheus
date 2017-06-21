@@ -25,5 +25,9 @@ namespace Thanagames.Damocles.Controllers {
 		void Update () {
 			
 		}
+
+		void OnCollisionEnter(Collision collision) {
+			Debug.Log ("Collision From sword");
+		}
 	}
 }
