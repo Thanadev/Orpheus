@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Thanagames.Damocles.Controllers;
 
 namespace Thanagames.Damocles.Services {
 	
 	public class ObstacleService : MonoBehaviour {
 
+		public GameController gameController;
 		public GameObject[] obstaclePrefabs;
 
 		public GameObject GetObstacleByElapsedTime () {
