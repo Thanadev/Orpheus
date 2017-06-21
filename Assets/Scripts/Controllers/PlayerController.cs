@@ -11,14 +11,11 @@ namespace Thanagames.Damocles.Controllers {
 		public Vector2 maxXAxisMotion;
 		public float xMotionValue = 1;
 
+		private Rigidbody rb;
+
 		// Use this for initialization
-		void Start () {
-			
-		}
-		
-		// Update is called once per frame
-		void Update () {
-			
+		void Awake () {
+			rb = GetComponent<Rigidbody> ();
 		}
 
 		public void MoveOnXAxis (bool toRight) {
@@ -35,8 +32,8 @@ namespace Thanagames.Damocles.Controllers {
 			}
 		}
 
-		void OnCollisionEnter(Collision collision) {
-			Debug.Log ("Collision");
+		void OnCollisionEnter (Collision collision) {
+			rb.velocity = collision.rigidbody.velocity;
 		}
 	}
 }

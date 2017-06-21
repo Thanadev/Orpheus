@@ -6,7 +6,7 @@ namespace Thanagames.Damocles.Controllers {
 	
 	[RequireComponent(typeof(Rigidbody))]
 	[RequireComponent(typeof(Collider))]
-	public class SwordController : MonoBehaviour {
+	public class ObstacleController : MonoBehaviour {
 
 		public float fallingSpeed;
 
@@ -19,15 +19,6 @@ namespace Thanagames.Damocles.Controllers {
 
 		void Start () {
 			rb.velocity = new Vector3 (0, -fallingSpeed, 0);
-		}
-		
-		// Update is called once per frame
-		void Update () {
-			
-		}
-
-		void OnCollisionEnter(Collision collision) {
-			Debug.Log ("Collision From sword");
 		}
 	}
 }
