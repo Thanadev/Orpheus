@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Thanagames.Damocles.Services;
 
 namespace Thanagames.Damocles.Controllers {
@@ -11,6 +12,7 @@ namespace Thanagames.Damocles.Controllers {
 		public ObstacleService obstacleServ;
 		public float minSecondsBetweenSpawns = 1;
 		public float secondsBetweenSpawns = 3;
+		public TimeRecordEntity timeRecord;
 
 		private SpawnerController[] spawners;
 		private bool gameStopped = false;
@@ -30,18 +32,27 @@ namespace Thanagames.Damocles.Controllers {
 		}
 
 		void Update () {
-			timeElapsed += Time.deltaTime;
+			if (gameStopped != true) {
+				timeElapsed += Time.deltaTime;
+			}
 
 			if (secondsBetweenSpawns > minSecondsBetweenSpawns) {
 				secondsBetweenSpawns -= 0.0001f;
 			}
 		}
 
+		public void PlayerDeadHandler () {
+			timeRecord.timeSurvived = timeElapsed;
+			gameStopped = true;
+			SceneManager.LoadScene ("gameover");
+
+		}
+
 		IEnumerator SpawnObstacles () {
 			while (!gameStopped) {
 				yield return new WaitForSeconds (secondsBetweenSpawns);
 
-				int spawnerIndex = Random.Range (0, spawners.Length - 1);
+				int spawnerIndex = Random.Range (0, spawners.Length);
 				spawners [spawnerIndex].Spawn (obstacleServ.GetObstacleByElapsedTime ());
 			}
 		}
@@ -49,6 +60,12 @@ namespace Thanagames.Damocles.Controllers {
 		public float TimeElapsed {
 			get {
 				return this.timeElapsed;
+			}
+		}
+
+		public bool GameStopped {
+			get {
+				return this.gameStopped;
 			}
 		}
 	}

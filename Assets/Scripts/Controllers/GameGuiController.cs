@@ -19,7 +19,9 @@ namespace Thanagames.Damocles.Controllers.Gui {
 		
 		// Update is called once per frame
 		void Update () {
-			ActualizeTimer ();
+			if (gameController.GameStopped == false) {
+				ActualizeTimer ();
+			}
 		}
 
 		public void DirectionButtonClickedHandler (bool right) {
