@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class MainMenuController : MonoBehaviour {
 
 	public void PlayButtonClickedHandler () {
-		SceneManager.LoadSceneAsync ("main");
+		SceneManager.LoadScene ("main");
+	}
+
+	public void QuitButtonClickedHandler () {
+		Application.Quit ();
 	}
 }

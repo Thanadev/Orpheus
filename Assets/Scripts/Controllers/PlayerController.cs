@@ -11,11 +11,35 @@ namespace Thanagames.Damocles.Controllers {
 		public Vector2 maxXAxisMotion;
 		public float xMotionValue = 1;
 
+		[Header("Player Effects")]
+		public float minYOscillation;
+		public float oscillationValue;
+		private float oscillationFactor;
+
 		private Rigidbody rb;
+		private bool hit = false;
+		Vector3 nextPos;
 
 		// Use this for initialization
 		void Awake () {
 			rb = GetComponent<Rigidbody> ();
+		}
+
+		void FixedUpdate () {
+			if (!hit) {
+				nextPos = transform.position;
+				transform.RotateAround (transform.position, Vector3.up, 2);
+
+				if (nextPos.y <= minYOscillation) {
+					oscillationFactor = 1;
+				} else if (nextPos.y >= 0) {
+					oscillationFactor = -1;
+				}
+
+				nextPos.y += oscillationValue * oscillationFactor;
+
+				transform.position = nextPos;
+			}
 		}
 
 		public void MoveOnXAxis (bool toRight) {
@@ -33,6 +57,7 @@ namespace Thanagames.Damocles.Controllers {
 		}
 
 		void OnCollisionEnter (Collision collision) {
+			hit = true;
 			rb.velocity = collision.rigidbody.velocity;
 		}
 	}

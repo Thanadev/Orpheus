@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: f72d77084f717104c833c1e02db08cf4
+timeCreated: 1498084347
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: chestbone
+    100004: chestbone.001
+    100006: chestbone.002
+    100008: chestbone.003
+    100010: chestbone.004
+    100012: chestbone.004_end
+    100014: chestbone.005
+    100016: chestbone.005_end
+    100018: chestbone.006
+    100020: chestbone.006_end
+    100022: chestbone.007
+    100024: chestbone.007_end
+    100026: Cube
+    100028: headBone
+    100030: headBone_end
+    100032: leftshoulder
+    100034: leftshoulder.001
+    100036: leftshoulder.002
+    100038: leftshoulder.003
+    100040: leftshoulder.003_end
+    100042: leftshoulder.004
+    100044: leftshoulder.004_end
+    100046: leftshoulder.005
+    100048: leftshoulder.005_end
+    100050: neckbone
+    100052: //RootNode
+    400000: Armature
+    400002: chestbone
+    400004: chestbone.001
+    400006: chestbone.002
+    400008: chestbone.003
+    400010: chestbone.004
+    400012: chestbone.004_end
+    400014: chestbone.005
+    400016: chestbone.005_end
+    400018: chestbone.006
+    400020: chestbone.006_end
+    400022: chestbone.007
+    400024: chestbone.007_end
+    400026: Cube
+    400028: headBone
+    400030: headBone_end
+    400032: leftshoulder
+    400034: leftshoulder.001
+    400036: leftshoulder.002
+    400038: leftshoulder.003
+    400040: leftshoulder.003_end
+    400042: leftshoulder.004
+    400044: leftshoulder.004_end
+    400046: leftshoulder.005
+    400048: leftshoulder.005_end
+    400050: neckbone
+    400052: //RootNode
+    4300000: Cube
+    7400000: Armature|ArmatureAction
+    9500000: //RootNode
+    13700000: Cube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|ArmatureAction
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/chestbone
+        weight: 1
+      - path: Armature/chestbone/chestbone.001
+        weight: 1
+      - path: Armature/chestbone/chestbone.001/chestbone.002
+        weight: 1
+      - path: Armature/chestbone/chestbone.001/chestbone.002/chestbone.003
+        weight: 1
+      - path: Armature/chestbone/chestbone.001/chestbone.002/chestbone.003/chestbone.004
+        weight: 1
+      - path: Armature/chestbone/chestbone.001/chestbone.002/chestbone.003/chestbone.004/chestbone.004_end
+        weight: 1
+      - path: Armature/chestbone/chestbone.001/chestbone.002/chestbone.003/chestbone.005
+        weight: 1
+      - path: Armature/chestbone/chestbone.001/chestbone.002/chestbone.003/chestbone.005/chestbone.005_end
+        weight: 1
+      - path: Armature/chestbone/chestbone.001/chestbone.002/chestbone.003/chestbone.006
+        weight: 1
+      - path: Armature/chestbone/chestbone.001/chestbone.002/chestbone.003/chestbone.006/chestbone.006_end
+        weight: 1
+      - path: Armature/chestbone/chestbone.007
+        weight: 1
+      - path: Armature/chestbone/chestbone.007/chestbone.007_end
+        weight: 1
+      - path: Armature/chestbone/leftshoulder
+        weight: 1
+      - path: Armature/chestbone/leftshoulder/leftshoulder.001
+        weight: 1
+      - path: Armature/chestbone/leftshoulder/leftshoulder.001/leftshoulder.002
+        weight: 1
+      - path: Armature/chestbone/leftshoulder/leftshoulder.001/leftshoulder.002/leftshoulder.003
+        weight: 1
+      - path: Armature/chestbone/leftshoulder/leftshoulder.001/leftshoulder.002/leftshoulder.003/leftshoulder.003_end
+        weight: 1
+      - path: Armature/chestbone/leftshoulder/leftshoulder.001/leftshoulder.002/leftshoulder.004
+        weight: 1
+      - path: Armature/chestbone/leftshoulder/leftshoulder.001/leftshoulder.002/leftshoulder.004/leftshoulder.004_end
+        weight: 1
+      - path: Armature/chestbone/leftshoulder/leftshoulder.001/leftshoulder.002/leftshoulder.005
+        weight: 1
+      - path: Armature/chestbone/leftshoulder/leftshoulder.001/leftshoulder.002/leftshoulder.005/leftshoulder.005_end
+        weight: 1
+      - path: Armature/chestbone/neckbone
+        weight: 1
+      - path: Armature/chestbone/neckbone/headBone
+        weight: 1
+      - path: Armature/chestbone/neckbone/headBone/headBone_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

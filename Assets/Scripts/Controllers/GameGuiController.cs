@@ -15,6 +15,11 @@ namespace Thanagames.Damocles.Controllers.Gui {
 		// Use this for initialization
 		void Awake () {
 			player = FindObjectOfType<PlayerController> ();
+			GameObject menuGui = GameObject.Find ("MenuGui");
+
+			if (menuGui != null) {
+				menuGui.SetActive (false);
+			}
 		}
 		
 		// Update is called once per frame
